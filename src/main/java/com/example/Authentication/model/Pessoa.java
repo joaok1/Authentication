@@ -29,13 +29,15 @@ public class Pessoa {
 
     private String rg;
 
+    private String cep;
+
     private String endereco;
+
+    private String Bairro;
 
     private String cidade;
 
     private String estado;
-
-    private String cep;
 
     private String telefone;
 

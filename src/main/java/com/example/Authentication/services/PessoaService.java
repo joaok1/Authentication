@@ -50,6 +50,12 @@ public class PessoaService {
             pessoa.setSobrenome(pessoaDTO.getSobrenome());
             pessoa.setCpf(pessoaDTO.getCpf());
             pessoa.setEmail(pessoaDTO.getEmail());
+            pessoa.setCep(pessoa.getCep());
+            pessoa.setEndereco(pessoaDTO.getEndereco());
+            pessoa.setBairro(pessoaDTO.getBairro());
+            pessoa.setCidade(pessoa.getCidade());
+            pessoa.setEstado(pessoaDTO.getEstado());
+            pessoa.setTelefone(pessoaDTO.getTelefone());
             Usuario usuario = new Usuario();
             usuario.setLogin(pessoaDTO.getCpf());
             Optional<Role> role = roleRepository.findById(pessoaDTO.getRole());
