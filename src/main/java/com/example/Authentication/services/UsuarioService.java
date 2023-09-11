@@ -44,15 +44,15 @@ public class UsuarioService implements UserDetailsService {
         String[] roles = new String[]{};
 
         if(usuario.getRole().getName().equals(RolesInterface.ADMIN)) {
-            roles  = new String[]{"ADMIN"};
+            roles  = new String[]{RolesInterface.ADMIN};
         } else if(usuario.getRole().getName().equals(RolesInterface.USER)) {
-            roles =  new String[]{"USER"};
+            roles =  new String[]{RolesInterface.USER};
         } else if (usuario.getRole().getName().equals(RolesInterface.CAIXA)) {
-            roles =  new String[]{"CAIXA"};
+            roles =  new String[]{RolesInterface.CAIXA};
         } else if (usuario.getRole().getName().equals(RolesInterface.VENDEDOR)) {
-            roles =  new String[]{"VENDEDOR"};
+            roles =  new String[]{RolesInterface.VENDEDOR};
         } else if (usuario.getRole().getName().equals(RolesInterface.GERENTE)) {
-            roles =  new String[]{"GERENTE"};
+            roles =  new String[]{RolesInterface.GERENTE};
         }
 
         return User
