@@ -18,9 +18,6 @@ public class EnderecoService {
         //Abre a conexão
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
-        // Obtém a resposta do servidor
-        int responseCode = con.getResponseCode();
-        System.out.println("Código de resposta: " + responseCode);
 
         // Lê a resposta do servidor
         BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
